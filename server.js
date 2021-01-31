@@ -11,6 +11,7 @@ const routes = require('./routes/api')
 
 //const MONGODB_URI = 'mongodb+srv://admin-ryan:pass12345@cluster0.99pg4.mongodb.net/<dbname>?retryWrites=true&w=majority'
 
+
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/mern_booklog',{useNewUrlParser: true, useUnifiedTopology: true})
 
 mongoose.connection.on('connected', () => {
